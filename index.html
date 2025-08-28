@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Fundamentals Playground</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>JavaScript Fundamentals Playground</h1>
+      <p>Explore variables, functions, loops, and the DOM.</p>
+    </header>
+
+    <main class="container">
+      <!-- Part 1: Variables, Data Types, Operators, and Conditionals -->
+      <section id="part1" class="card">
+        <h2>Part 1: Variables, Data Types, Operators, and Conditionals</h2>
+        <p class="muted">Enter your details and run a simple decision program.</p>
+        <div class="grid">
+          <label>
+            <span>Name</span>
+            <input id="name-input" type="text" placeholder="Ada Lovelace">
+          </label>
+          <label>
+            <span>Age</span>
+            <input id="age-input" type="number" min="0" placeholder="21">
+          </label>
+        </div>
+        <button id="greet-btn" class="btn">Greet & Check Age</button>
+        <div id="part1-output" class="output" aria-live="polite"></div>
+      </section>
+
+      <!-- Part 2: Custom Functions -->
+      <section id="part2" class="card">
+        <h2>Part 2: Custom Functions</h2>
+        <p class="muted">Calculate totals and format text with reusable functions.</p>
+        <div class="grid">
+          <label>
+            <span>Price</span>
+            <input id="price-input" type="number" min="0" step="0.01" placeholder="19.99">
+          </label>
+          <label>
+            <span>Quantity</span>
+            <input id="quantity-input" type="number" min="0" step="1" placeholder="2">
+          </label>
+          <label>
+            <span>Discount (0–1)</span>
+            <input id="discount-input" type="number" min="0" max="1" step="0.01" placeholder="0.10">
+          </label>
+          <label>
+            <span>Tax Rate (0–1)</span>
+            <input id="tax-input" type="number" min="0" max="1" step="0.01" placeholder="0.07">
+          </label>
+        </div>
+        <div class="row">
+          <button id="calc-btn" class="btn">Calculate Total</button>
+          <button id="format-btn" class="btn btn-secondary">Format Name (Title Case)</button>
+        </div>
+        <div id="calc-output" class="output" aria-live="polite"></div>
+
+        <div class="toggle-demo">
+          <button id="toggle-btn" class="btn">Toggle Highlight Box</button>
+          <div id="toggle-target" class="box" role="status">I can be toggled.</div>
+        </div>
+      </section>
+
+      <!-- Part 3: Loops (for, while, forEach) -->
+      <section id="part3" class="card">
+        <h2>Part 3: Loops</h2>
+        <div class="row">
+          <button id="generate-list-btn" class="btn">Generate Fruit List (forEach)</button>
+          <button id="countdown-btn" class="btn btn-secondary">Start Countdown (while)</button>
+        </div>
+        <div class="split">
+          <div>
+            <h3>Dynamic List</h3>
+            <ul id="list-output" class="list"></ul>
+          </div>
+          <div>
+            <h3>Countdown</h3>
+            <div id="countdown-output" class="output"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 4: DOM Interactions -->
+      <section id="part4" class="card">
+        <h2>Part 4: Mastering the DOM</h2>
+        <ul>
+          <li>Selecting elements and updating text/content</li>
+          <li>Toggling classes and styles</li>
+          <li>Listening to events and creating elements dynamically</li>
+        </ul>
+        <p class="muted">Interact with any section above to see DOM updates in action.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>Built for learning: variables, functions, loops, and DOM.</small>
+    </footer>
+  </body>
+  </html>
+
